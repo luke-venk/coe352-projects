@@ -4,7 +4,7 @@ In order to modify the inputs, navigate to `Project1/inputs` and modify the foll
 1. masses.txt  
 2. springs.txt  
 
-The first line of the input files should be the number of masses/springs. Each following input should be the spring constant or mass of the object. The units should be in N/m for spring constants or kg for masses.
+The first line of the input files should be the number of masses/springs. Each following input should be the spring constant or mass of the object. The units should be in N/m for spring constants or kg for masses. You can see the examples in the `fixed_fixed_inputs` or `fixed_free_inputs` directories.
 
 ## Running the Script
 To install all the dependencies needed for this project, run the following command:  
