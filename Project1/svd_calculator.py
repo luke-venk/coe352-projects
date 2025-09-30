@@ -93,6 +93,6 @@ def svd(A: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, int, np.ndar
     A_inv = V[:, :n] @ S_inv @ U[:, :n].T
     
     # Compute the condition number
-    K = np.linalg.norm(A) * np.linalg.norm(A_inv)
+    K = np.linalg.norm(A, ord=2) * np.linalg.norm(A_inv, ord=2)
     
     return U, S, V.T, K, A_inv
