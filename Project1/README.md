@@ -26,3 +26,7 @@ By leaving the command line arguments empty, the inputs in the `inputs` director
 If you would rather use some example inputs for either a fixed-fixed system or a fixed-free system, run the following commands:  
 `python3 spring_system.py --type fixed_fixed`  
 `python3 spring_system.py --type fixed_free`  
+
+## What happens if 2 free ends are used as boundary conditions
+When 2 free ends are used as boundary conditions in a spring-mass system, this leads to a system that doesn't physically make sense. Since there are more unknowns (number of masses) than number of equations (number of springs), the matrix will not be full rank, and thus not be solvable.  
+Another way to think about it, is that there's nothing holding the system in space. For example, even under no load, the entire system could just be translating in space while there are no elongations. There is no unique equilibrium for the system. In other words, there could be no solution or infinite solutions.
